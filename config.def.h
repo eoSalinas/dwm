@@ -117,6 +117,8 @@ static const Key keys[] = {
 	{ MODKEY, XK_Return, spawn, {.v = termcmd } },
     { MODKEY, XK_space, spawn, {.v = dmenucmd } },
 
+    { MODKEY|ShiftMask, XK_w, spawn, SHCMD("$HOME/scripts/set-wallpaper") },
+
     // multi-monitor control
 	{ MODKEY, XK_bracketleft, focusmon, {.i = +1 } },
 	{ MODKEY|ShiftMask, XK_bracketleft, tagmon, {.i = +1 } },
