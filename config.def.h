@@ -123,6 +123,10 @@ static const Key keys[] = {
 	{ 0, XK_F1, spawn, SHCMD("$HOME/scripts/volume mute") },
     { 0, XK_F2, spawn, SHCMD("$HOME/scripts/volume down") },
 	{ 0, XK_F3, spawn, SHCMD("$HOME/scripts/volume up") },
+
+    // brightness control
+	{ 0, XK_F11, spawn, SHCMD("$HOME/scripts/screenlight down") },
+    { 0, XK_F12, spawn, SHCMD("$HOME/scripts/screenlight up") },
 };
 
 /* button definitions */
