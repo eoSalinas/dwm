@@ -71,10 +71,6 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 
 static const char *termcmd[] = { "st", NULL };
 
-static const char *upvol[] = { "/usr/bin/wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%+", NULL };
-static const char *downvol[] = { "/usr/bin/wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
-static const char *mutevol[] = { "/usr/bin/wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
-
 static const Key keys[] = {
 	{ MODKEY|ShiftMask, XK_BackSpace, quit, {0} }, // quit dwm :(
 	{ MODKEY, XK_F5, xrdb, {.v = NULL } }, // reload colors
@@ -124,9 +120,13 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask, XK_bracketright, tagmon, {.i = -1 } },
 
     // volume control
-	{ 0, XK_F1, spawn, {.v = mutevol } },
-    { 0, XK_F2, spawn, {.v = downvol } },
-	{ 0, XK_F3, spawn, {.v = upvol   } },
+	{ 0, XK_F1, spawn, SHCMD("$HOME/scripts/volume mute") },
+    { 0, XK_F2, spawn, SHCMD("$HOME/scripts/volume down") },
+	{ 0, XK_F3, spawn, SHCMD("$HOME/scripts/volume up") },
+
+    // brightness control
+	{ 0, XK_F11, spawn, SHCMD("$HOME/scripts/screenlight down") },
+    { 0, XK_F12, spawn, SHCMD("$HOME/scripts/screenlight up") },
 };
 
 /* button definitions */
