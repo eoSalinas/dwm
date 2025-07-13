@@ -113,7 +113,7 @@ static const Key keys[] = {
 	{ MODKEY, XK_Return, spawn, {.v = termcmd } },
     { MODKEY, XK_space, spawn, {.v = dmenucmd } },
 
-    { MODKEY|ShiftMask, XK_w, spawn, SHCMD("$HOME/scripts/set-wallpaper") },
+    { MODKEY|ShiftMask, XK_w, spawn, SHCMD("$XDG_CONFIG_HOME/scripts/set-wallpaper") },
 
     // multi-monitor control
 	{ MODKEY, XK_bracketleft, focusmon, {.i = +1 } },
@@ -122,13 +122,13 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask, XK_bracketright, tagmon, {.i = -1 } },
 
     // volume control
-	{ 0, XK_F1, spawn, SHCMD("$HOME/scripts/volume mute") },
-    { 0, XK_F2, spawn, SHCMD("$HOME/scripts/volume down") },
-	{ 0, XK_F3, spawn, SHCMD("$HOME/scripts/volume up") },
+	{ 0, XK_F1, spawn, SHCMD("$XDG_CONFIG_HOME/scripts/volume mute") },
+    { 0, XK_F2, spawn, SHCMD("$XDG_CONFIG_HOME/scripts/volume down") },
+	{ 0, XK_F3, spawn, SHCMD("$XDG_CONFIG_HOME/scripts/volume up") },
 
     // brightness control
-	{ 0, XK_F11, spawn, SHCMD("$HOME/scripts/screenlight down") },
-    { 0, XK_F12, spawn, SHCMD("$HOME/scripts/screenlight up") },
+	{ 0, XK_F11, spawn, SHCMD("$XDG_CONFIG_HOME/scripts/screenlight down") },
+    { 0, XK_F12, spawn, SHCMD("$XDG_CONFIG_HOME/scripts/screenlight up") },
 };
 
 /* button definitions */
