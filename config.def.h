@@ -70,6 +70,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
 
 static const char *termcmd[] = { "st", NULL };
+static const char *yazicmd[] = { "st", "-e", "yazi", NULL };
 
 static const Key keys[] = {
 	{ MODKEY|ShiftMask, XK_BackSpace, quit, {0} }, // quit dwm :(
@@ -112,6 +113,7 @@ static const Key keys[] = {
     // application/script bindings
 	{ MODKEY, XK_Return, spawn, {.v = termcmd } },
     { MODKEY, XK_space, spawn, {.v = dmenucmd } },
+    { MODKEY, XK_e, spawn, {.v = yazicmd} },
 
     { MODKEY|ShiftMask, XK_w, spawn, SHCMD("$XDG_CONFIG_HOME/scripts/set-wallpaper") },
 
