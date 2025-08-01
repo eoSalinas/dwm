@@ -117,6 +117,8 @@ static const Key keys[] = {
 
     { MODKEY|ShiftMask, XK_w, spawn, SHCMD("$XDG_CONFIG_HOME/scripts/set-wallpaper") },
 
+    { MODKEY, XK_Escape, spawn, {.v = (const char*[]){ "system-control", NULL } }},
+
     // multi-monitor control
 	{ MODKEY, XK_bracketleft, focusmon, {.i = +1 } },
 	{ MODKEY|ShiftMask, XK_bracketleft, tagmon, {.i = +1 } },
