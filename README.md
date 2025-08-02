@@ -1,6 +1,6 @@
 ## dwm
 
-My personal fork of `dwm` (dynamic window manager).
+My personal fork of [dmw](https://dwm.suckless.org/) (dynamic window manager).
 
 <img width="2880" height="1800" alt="Arch linux with dwm" src="https://github.com/user-attachments/assets/31eb7d8d-a922-458c-9398-93d1bc1cb89d" />
 
