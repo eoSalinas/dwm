@@ -3,16 +3,12 @@
 My personal fork of `dwm` (dynamic window manager). Clean, patched, and tuned to my setup. No guarantees :^)
 
 ### patches included
-
 - `colorbar`
 - `hide_vacant_tags`
 - `vanitygaps`
 - `xrdb`
 
-If you aren't using ```~/.Xresources``` with or without [pywal16](https://github.com/eylles/pywal16), default color palette is a variant of Kanagawa.
-
 ### how to use
-
 Clone, build, install:
 
 ```sh
@@ -28,4 +24,7 @@ sudo make clean install
   - ```mod + q``` to quit window
   - ```mod + shift + backspace``` to fully exit
 
-  I use [dwmblocks](https://github.com/eoSalinas/dwmblocks) for my statusbar.
+### notes
+If you aren't using ```~/.Xresources``` with or without [pywal16](https://github.com/eylles/pywal16), default color palette is a variant of Kanagawa.
+
+I use [dwmblocks](https://github.com/eoSalinas/dwmblocks) for my statusbar.
