@@ -19,7 +19,7 @@ cd dwm
 sudo make clean install
 ```
 
-- Basic ~/.xinitrc requirement: exec dwm
+- Basic `~/.xinitrc` requirement: `exec dwm`
 * Configure settings (fonts, bindings, gap pixels, etc) in **config.def.h** before compiling.
   - Defaults: Mod is bound to the windows key
   - ```mod + enter``` to open terminal
@@ -30,3 +30,6 @@ sudo make clean install
 If you aren't using ```~/.Xresources``` with or without [pywal16](https://github.com/eylles/pywal16), default color palette is a variant of Kanagawa.
 
 I use [dwmblocks](https://github.com/eoSalinas/dwmblocks) for my statusbar.
+
+Necessary helper scripts (like volume, brightness) can be found here: [https://github.com/eoSalinas/scripts
+](https://github.com/eoSalinas/scripts)
